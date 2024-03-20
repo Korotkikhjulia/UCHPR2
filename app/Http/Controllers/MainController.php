@@ -22,6 +22,7 @@ class MainController extends Controller
         $post = Advertisements::find($p);
         $post->delete();
         return redirect()->route('home')->with('success', 'Удаление поста прошло успешно');
+        
     }
 
     public function redac(Request $request)
