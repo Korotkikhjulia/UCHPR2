@@ -25,8 +25,6 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::post('/home', [HomeController::class, 'index2'])->name('home2');
 Route::get('/Otz', [HomeController::class, 'Otz'])->name('Otz');
 
-
-
 Route::middleware(['guest'])->group(function(){
     Route::get('/register', [UserController::class, 'create'])->name('user.create');
     Route::post('/register', [UserController::class, 'store'])->name('user.store');
