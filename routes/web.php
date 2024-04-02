@@ -61,3 +61,5 @@ Route::middleware(['admin'])->group(function(){
     Route::post('/ban', [MainController::class, 'ban'])->name('user.ban');
     Route::post('/rasban', [MainController::class, 'rasban'])->name('user.rasban');
 });
+
+
